@@ -6,7 +6,7 @@ LitterLess is a web app that helps communities promote responsible waste disposa
 - [Usage](#Usage)
 - [Features](#Features)
 - [Contributing](#Contributing)
-- [Lisence](#Lisence)
+- [License](#Lisence)
 
 ## Installation
 To install and run LitterLess on your local machine, follow these steps:
