@@ -4,7 +4,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/index',
       name: 'main',
       component: () => import('../views/main.vue'),
       children: [
@@ -20,6 +20,28 @@ const router = createRouter({
         }
       ]
     },
+    {
+      path:'/',
+      name:'auth',
+      component: () => import('@/views/auth.vue'),
+      children:[
+        {
+          path: '/login',
+          name: 'login',
+          component: () => import('@/views/auth/login.vue')
+        },
+        {
+          path: '/signup',
+          name: 'signup',
+          component: () => import('@/views/auth/signup.vue')
+        },
+        {
+          path: '/password-reset',
+          name: 'reset_pass',
+          component: () => import('@/views/auth/reset_pass.vue')
+        }
+      ]
+    }
   ]
 })
 
