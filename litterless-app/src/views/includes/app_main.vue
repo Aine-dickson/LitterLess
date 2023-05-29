@@ -1,5 +1,5 @@
 <template>
-    <main class="h-full">
+    <main class="h-full overflow-y-auto">
         <RouterView/>
     </main>
 </template>
