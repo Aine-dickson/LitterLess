@@ -22,6 +22,13 @@ const router = createRouter({
           path: '/notifications',
           name: 'notifications',
           component: () => import('@/views/pages/notifications.vue')
+        },
+        {
+          path: 'report-garbage',
+          name: 'report',
+          component: () => {
+            
+          }
         }
       ]
     },
